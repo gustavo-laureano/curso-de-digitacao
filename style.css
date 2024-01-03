@@ -1,18 +1,27 @@
+
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-	background:black;
-	background: linear-gradient(top,rgb(126,198,234)0%,rgb(70,179,234)45%,rgb(3,135,201)100%);
+  background: rgb(0,78,149);
+  background: -moz-radial-gradient(circle, rgba(0,78,149,1) 0%, rgba(0,28,61,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0,78,149,1) 0%, rgba(0,28,61,1) 100%);
+  background: radial-gradient(circle, rgba(0,78,149,1) 0%, rgba(0,28,61,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004e95",endColorstr="#001c3d",GradientType=1);
 }
 
 .container {
   text-align: center;
-	background-color:whitesmoke;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 41%, rgba(226,226,226,1) 89%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 41%, rgba(226,226,226,1) 89%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 41%, rgba(226,226,226,1) 89%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e2e2e2",GradientType=1);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -21,14 +30,20 @@ body {
 }
 
 h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
   color: #333;
+}
+h2{
+  font-weight: 300;
+  margin-bottom: 55px;
+  
 }
 
 .typing-area {
   position: relative;
   margin-top: 10px;
+  margin-bottom: 30px;
 
 }
 
@@ -37,6 +52,8 @@ h1 {
   margin-bottom: 15px;
   color: #555;
   font-family: monospace;
+  padding-left: 2px;
+  padding-top: 2px;
 }
 
 .input-area {
@@ -50,12 +67,14 @@ h1 {
   transition: border-color 0.3s ease-in-out;
   font-family: monospace;
   color: transparent;
+  
 }
 
 .input-area:focus {
   color: transparent;
   outline: none;
   border-color: #eeeeee;
+
 }
 label {
   position: absolute;
@@ -77,3 +96,40 @@ label {
   text-decoration: overline;
   color: red;
 }
+.info{
+  display: block;
+  position: relative;
+  padding: 15px;
+}
+
+#timer{
+  font-size: 25px;
+  color: darkblue;
+  text-align: right;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#pontos{
+  
+  font-size: 25px;
+  color: black;
+ 
+  position: absolute;
+  top: 0px;
+  right: 45%;
+  }
+#restart{
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  background-color: rgb(47, 0, 255);
+  color: white;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  }
