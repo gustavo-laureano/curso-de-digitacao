@@ -3,31 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digitação</title>
+  <title>Curso de Digitação</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <script src="anticheat.js"></script>
 </head>
-
 <body>
-  <div class="container">
-    <h1 class="fase">Memorização Fase I </h1>
-	  <h2 class="licao">Lição 1</h2>
-    <span class="text-to-type">asdf asdf asdf asdf asdf asdf </span>
-    <div class="typing-area">
-      <label><div class="typing" id="typing"></div></label>
-      <input onfocus="startCronometro()" oninput="read()" class="input-area" id="input-area" maxlength="30" ></textarea>
-    </div>
+<div id="info">
+    <a>Nome: <a> 
+    <br>
+    <a>Horas:</a> </div>
 
-    <div class="info">
-      <div id="timer">00:00</div>
-      <div id="pontos">0</div> 
-      <button id="restart" onclick="resetGame()">Recomeçar</button>
-    <div>
-  </div>
+<div class="main">
+<h1>Curso de Digitação</h1>
 
+<div id="ctn" class="container">
+<div id="esquerda">
+<h3 onclick="abrirFase(1)">Memorização I</h3>
+<h3 onclick="abrirFase(2)">Memorização II</h3>
+<h3 onclick="abrirFase(3)">Memorização III</h3>
+</div>
+
+<div id="direita">
+<h3 onclick="abrirFase(4)">Velocidade I</h3>
+<h3 onclick="abrirFase(5)">Velocidade II</h3>
+<h3 onclick="abrirFase(6)">Velocidade III</h3>
+</div>
+</div>
+
+<div id="fases" class="container">
+ <div id="fase1"> 
+  
+</div>
+</div>
+<h3 class="centralizado" onclick="voltar()" id="voltar">Voltar</h3>
 </body>
 </html>
